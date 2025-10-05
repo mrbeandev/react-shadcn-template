@@ -7,6 +7,7 @@ A clean, modern template for building React applications with Vite and Tailwind 
 - ⚡ **Vite** - Fast build tool and dev server
 - ⚛️ **React** - Component-based UI library
 - 🎨 **Tailwind CSS v4** - Utility-first CSS framework
+- 🧩 **Shadcn/ui** - Beautiful and accessible UI components
 - 📝 **TypeScript** - Type-safe JavaScript
 - 🔧 **ESLint** - Code linting and formatting
 
@@ -41,6 +42,8 @@ src/
 ├── App.tsx          # Main app component
 ├── main.tsx         # App entry point
 ├── index.css        # Global styles with Tailwind
+├── components/      # Reusable UI components
+│   └── ui/          # Shadcn/ui components
 └── assets/          # Static assets
 ```
 
