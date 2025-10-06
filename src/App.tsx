@@ -11,7 +11,7 @@ import { AlertCircle, CheckCircle, Info, XCircle } from "lucide-react";
 
 function App() {
 	return (
-		<div className="flex min-h-svh flex-col items-center justify-center gap-8 p-8">
+		<div className="flex min-h-svh flex-col flex-wrap sm:max-h-screen items-center justify-center gap-8 p-8">
 			<div className="text-center">
 				<h1 className="text-2xl font-bold mb-4">Shadcn Components Sample</h1>
 				<div className="flex gap-4 justify-center flex-wrap">
