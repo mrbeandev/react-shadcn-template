@@ -11,10 +11,10 @@ import { AlertCircle, CheckCircle, Info, XCircle } from "lucide-react";
 
 function App() {
 	return (
-		<div className="flex min-h-svh flex-col flex-wrap sm:max-h-screen items-center justify-center gap-8 p-8">
+		<div className="flex min-h-svh flex-col flex-wrap items-center justify-center gap-8 p-8 sm:max-h-screen">
 			<div className="text-center">
-				<h1 className="text-2xl font-bold mb-4">Shadcn Components Sample</h1>
-				<div className="flex gap-4 justify-center flex-wrap">
+				<h1 className="mb-4 text-2xl font-bold">Shadcn Components Sample</h1>
+				<div className="flex flex-wrap justify-center gap-4">
 					<Button>Default Button</Button>
 					<Button variant="secondary">Secondary</Button>
 					<Button variant="destructive">Destructive</Button>
@@ -22,7 +22,7 @@ function App() {
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
+			<div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 				<Card>
 					<CardHeader>
 						<CardTitle>Card Title</CardTitle>
@@ -38,7 +38,7 @@ function App() {
 						<CardTitle>Badges</CardTitle>
 						<CardDescription>Different badge variants</CardDescription>
 					</CardHeader>
-					<CardContent className="flex gap-2 flex-wrap">
+					<CardContent className="flex flex-wrap gap-2">
 						<Badge>Default</Badge>
 						<Badge variant="secondary">Secondary</Badge>
 						<Badge variant="destructive">Destructive</Badge>
@@ -68,44 +68,36 @@ function App() {
 			</div>
 
 			<div className="w-full max-w-2xl">
-				<h2 className="text-xl font-semibold mb-4 text-center">Alerts</h2>
+				<h2 className="mb-4 text-center text-xl font-semibold">Alerts</h2>
 				<div className="space-y-4">
 					<Alert>
 						<Info className="h-4 w-4" />
 						<AlertTitle>Information</AlertTitle>
-						<AlertDescription>
-							This is an informational alert. It provides general information to the user.
-						</AlertDescription>
+						<AlertDescription>This is an informational alert. It provides general information to the user.</AlertDescription>
 					</Alert>
 
 					<Alert variant="destructive">
 						<XCircle className="h-4 w-4" />
 						<AlertTitle>Error</AlertTitle>
-						<AlertDescription>
-							This is an error alert. Something went wrong and needs attention.
-						</AlertDescription>
+						<AlertDescription>This is an error alert. Something went wrong and needs attention.</AlertDescription>
 					</Alert>
 
 					<Alert>
 						<CheckCircle className="h-4 w-4" />
 						<AlertTitle>Success</AlertTitle>
-						<AlertDescription>
-							This is a success alert. The operation completed successfully.
-						</AlertDescription>
+						<AlertDescription>This is a success alert. The operation completed successfully.</AlertDescription>
 					</Alert>
 
 					<Alert>
 						<AlertCircle className="h-4 w-4" />
 						<AlertTitle>Warning</AlertTitle>
-						<AlertDescription>
-							This is a warning alert. Please be cautious about this action.
-						</AlertDescription>
+						<AlertDescription>This is a warning alert. Please be cautious about this action.</AlertDescription>
 					</Alert>
 				</div>
 			</div>
 
 			<div className="w-full max-w-md">
-				<h2 className="text-xl font-semibold mb-4 text-center">Form Controls</h2>
+				<h2 className="mb-4 text-center text-xl font-semibold">Form Controls</h2>
 				<Card>
 					<CardHeader>
 						<CardTitle>Sample Form</CardTitle>
@@ -132,7 +124,7 @@ function App() {
 			</div>
 
 			<div className="w-full max-w-md">
-				<h2 className="text-xl font-semibold mb-4 text-center">Tabs</h2>
+				<h2 className="mb-4 text-center text-xl font-semibold">Tabs</h2>
 				<Tabs defaultValue="account" className="w-full">
 					<TabsList className="grid w-full grid-cols-2">
 						<TabsTrigger value="account">Account</TabsTrigger>
